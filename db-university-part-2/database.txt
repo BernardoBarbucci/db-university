@@ -49,9 +49,15 @@ GROUP BY department_id;
 
 1. Selezionare tutti gli studenti nati nel 1990 (160)
 
+SELECT * 
+FROM `students` 
+WHERE `date_of_birth` LIKE '%1990%';
 
-2. Selezionare tutti i corsi che valgono piè di 10 crediti (479)
+2. Selezionare tutti i corsi che valgono piu' di 10 crediti (479)
 
+SELECT * 
+FROM `courses` 
+WHERE `cfu` > 10; 
 
 3. Selezionarte tutti gli studenti che hanno piu' di 30 anni 
 
