@@ -18,11 +18,15 @@ ORDER BY Anno;
         2021 -> 734
 ]
 
-2. Contare gli insegnanti che hanno l'ufficiio nello stesso edificio 
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio 
 
+SELECT `office_address`, COUNT(*) AS stessoEdificio
+FROM `teachers` 
+GROUP BY `office_address`; 
 
-
-
+[
+    stessoEdificio -> posto dove x insegnanti hanno l'ufficio
+]
 
 3. Calcolare la media dei voti di ogni appello d'esame 
 
